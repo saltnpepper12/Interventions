@@ -1,6 +1,0 @@
-chainlit
-openai
-mem0ai
-python-dotenv
-pandas
-numpy 
