@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: chainlit-intervention-app
+    env: python
+    branch: main
+    buildCommand: "chmod +x start.sh"
+    startCommand: "./start.sh"
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: POETRY_VERSION
+        value: "1.5.1"
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_API_VERSION
+        sync: false
+      - key: OPENAI_API_BASE
+        sync: false
+      - key: AZURE_DEPLOYMENT_NAME
+        sync: false
+      - key: MEM0_API_KEY
+        sync: false 
