@@ -2,7 +2,11 @@
 
 # Exit on error
 set -o errexit
+# Set default port if not provided
+export PORT=${PORT:-8000}
 
+# Debug: Print the port being used
+echo "Starting Chainlit on port: $PORT"
 # Install dependencies
 pip install -r requirements.txt
 
