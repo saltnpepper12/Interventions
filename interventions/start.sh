@@ -3,7 +3,7 @@
 # Exit on error
 set -o errexit
 # Set default port if not provided
-export PORT=${PORT:-8000}
+export PORT=${PORT:-10000}
 
 # Debug: Print the port being used
 echo "Starting Chainlit on port: $PORT"
