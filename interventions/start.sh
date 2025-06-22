@@ -3,7 +3,7 @@
 # Exit on error
 set -o errexit
 # Set default port if not provided
-export PORT=${PORT:-10000}
+export PORT=${PORT:-8000}
 
 # Debug: Print the port being used
 echo "Starting Chainlit on port: $PORT"
@@ -11,4 +11,4 @@ echo "Starting Chainlit on port: $PORT"
 pip install -r requirements.txt
 
 # Run the application
-chainlit run interv.py --host 0.0.0.0 --port $PORT 
+exec chainlit run interventions/interv.py --host 0.0.0.0 --port $PORT 
