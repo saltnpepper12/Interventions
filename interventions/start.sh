@@ -11,4 +11,4 @@ echo "Starting Chainlit on port: $PORT"
 pip install -r requirements.txt
 
 # Run the application
-exec chainlit run interventions/interv.py --host 0.0.0.0 --port $PORT 
+exec chainlit run interv.py --host 0.0.0.0 --port $PORT 
