@@ -7,4 +7,4 @@ set -o errexit
 pip install -r requirements.txt
 
 # Run the application
-chainlit run interventions/interv.py --host 0.0.0.0 --port $PORT 
+chainlit run interv.py --host 0.0.0.0 --port $PORT 
